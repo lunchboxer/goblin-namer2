@@ -60,7 +60,7 @@
   {#if name}
     {name}
   {:else}
-    Loading ...
+    [Loading]
   {/if}
 </div>
 
@@ -109,6 +109,6 @@
   }
   .name {
     margin-bottom: 2rem;
-    font-size: 5rem;
+    font-size: 4rem;
   }
 </style>
