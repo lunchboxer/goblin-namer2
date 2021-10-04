@@ -1,0 +1,33 @@
+{
+  "name": "goblin-namer",
+  "version": "2.0.0",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview",
+    "lint": "eslint --ignore-path .gitignore src --fix",
+    "convert-names": "node convertnames.js",
+    "upload": "oss-upload build -o '/' -C -c ./oss.config.cjs",
+    "deploy": "npm run build && npm run upload"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^1.0.0-next.20",
+    "@sveltejs/kit": "next",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-svelte3": "^3.2.1",
+    "eslint-plugin-unicorn": "^36.0.0",
+    "oss-upload": "^1.0.0",
+    "prettier": "^2.4.1",
+    "prettier-plugin-svelte": "^2.4.0",
+    "random-weighted-choice": "^0.1.4",
+    "stylelint-config-recommended": "^5.0.0",
+    "svelte": "^3.42.6"
+  },
+  "type": "module"
+}
