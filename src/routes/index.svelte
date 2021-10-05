@@ -66,14 +66,19 @@
 
 <button on:click={reload}>Reload</button>
 
-<label for="genderField">Gender</label>
-<select id="genderField" bind:value={gender}>
-  <option value="M">Male</option>
-  <option value="F">Female</option>
-</select>
+<label>
+  <input type="radio" bind:group={gender} name="genderField" value="M" />
+  Male
+</label>
+
+<label>
+  <input type="radio" bind:group={gender} name="genderField" value="F" />
+  Female
+</label>
 
 <label for="yearField">Year</label>
 <input
+  class="slim"
   type="number"
   on:change={fetchNewNames}
   bind:value={year}
@@ -84,6 +89,7 @@
 
 <label for="percentField">Only top __ percent</label>
 <input
+  class="slim"
   type="number"
   bind:value={percentage}
   id="percentField"
@@ -94,6 +100,7 @@
 <label for="weightField">Weighting</label>
 <input
   type="number"
+  class="slim"
   bind:value={weighting}
   id="weightField"
   max="100"
@@ -101,10 +108,7 @@
 />
 
 <style>
-  select {
-    width: 15rem;
-  }
-  input {
+  input.slim {
     width: 15rem;
   }
   .name {

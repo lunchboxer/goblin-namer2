@@ -27,7 +27,7 @@ button,
 dd,
 dt,
 li {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .button,
@@ -349,7 +349,8 @@ h6 {
 }
 
 main {
-  padding: 4rem 2rem;
+  padding: 2rem;
+  margin: 0;
 }
 input.error {
   background: rgba(255, 100, 100, 0.1);

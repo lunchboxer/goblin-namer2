@@ -10,17 +10,11 @@
 <Footer />
 
 <style>
-  main {
-    margin: 0;
-  }
   h1 {
-    margin: 0;
     font-weight: bold;
+    font-size: 4rem;
+    margin: 1rem;
     padding: 0;
-    font-size: 10rem;
-    opacity: 0.1;
-    position: absolute;
-    top: 0;
-    left: 0;
+    border-bottom: 1px solid var(--primary-color);
   }
 </style>
